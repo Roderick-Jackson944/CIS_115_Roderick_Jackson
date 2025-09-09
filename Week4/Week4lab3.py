@@ -1,0 +1,5 @@
+num1 = input('enter first number:')
+num2 = input('enter second number:')
+mod = int(num1) % int(num2)
+if (mod = 0): (print ('is even'))
+else: (print('the values where valid integers, the diff of {0} and {1} is {2}'.format(num1, num2, diff))) 
