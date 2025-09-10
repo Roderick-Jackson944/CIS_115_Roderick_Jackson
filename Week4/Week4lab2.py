@@ -2,4 +2,5 @@ num1 = input('enter first number:')
 num2 = input('enter second number:')
 diff = int(num1) - int(num2)
 if (diff < 0): (print ('###Invalid! The value is less than zero###'))
-else: (print('the values where valid integers, the diff of {0} and {1} is {2}'.format(num1, num2, diff))) 
+else: 
+    (print('the values where valid integers, the diff of {0} and {1} is {2}'.format(num1, num2, diff))) 
