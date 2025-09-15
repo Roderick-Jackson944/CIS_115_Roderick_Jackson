@@ -1,5 +1,0 @@
-num1 = input('enter first number:')
-num2 = input('enter second number:')
-diff = float(num1) - float(num2)
-if (diff < 0): (print ('###Invalid! The value is less than zero###'))
-else: (print('the values where valid integers')) (print('the diff of {0} and {1} is {2}'.format(num1, num2, diff)))

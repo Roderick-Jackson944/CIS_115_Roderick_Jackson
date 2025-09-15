@@ -1,0 +1,7 @@
+num1 = input('enter first number:')
+num2 = input('enter second number:')
+num3 = input('enter second number:')
+sum = int(num1) + int(num2)
+diff= float(sum) / int(num3)
+if (diff < 0): (print (' The mathimatical operation is < 0'))
+else: (print('The mathimadical operation is > 0'))
