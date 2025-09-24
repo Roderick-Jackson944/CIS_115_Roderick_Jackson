@@ -1,0 +1,9 @@
+#deffine var
+m = input('input mass: ')
+x = 10 ** 8
+p = float(2.99) * x
+c = float (p) ** 2
+E = float(m) *float(c)
+
+print('The energy prodused is {0} Jouls' .format(E))
+
