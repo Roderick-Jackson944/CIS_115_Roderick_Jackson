@@ -1,9 +1,13 @@
-#deffine var
+
+# Define mass
 m = input('input mass: ')
+# light speed
 x = 10 ** 8
 p = float(2.99) * x
 c = float (p) ** 2
-E = float(m) *float(c)
+E = float(m) * float(c)
 
-print('The energy prodused is {0} Jouls' .format(E))
+def calculate_energy():
+    print('The energy prodused is {0} Jouls' .format(E))
+calculate_energy()
 

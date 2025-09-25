@@ -1,0 +1,9 @@
+
+jumbo = input('input word here: ')
+def reverse_my_string(word):
+    backsent = word[::-1]
+    return backsent
+if reverse_my_string(jumbo) == jumbo:
+    print('Word is palendrome')
+else:
+    print('word is not palendrome')

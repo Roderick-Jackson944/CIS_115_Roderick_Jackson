@@ -8,4 +8,6 @@ b = float(y) ** float(2)
 # Pathagorean Theorem
 c = math.sqrt(a+b)
 #print Result
-print('{0} is the hypotonuse of your triangle'.format(c))
+def printing():
+    print('{0} is the hypotonuse of your triangle'.format(c))
+printing()

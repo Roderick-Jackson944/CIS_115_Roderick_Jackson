@@ -1,9 +1,9 @@
 import math
 #defines var
-x = input ('input x variable: ')
-y = input ('input y variable: ')
+x = float(input ('input x variable: '))
+y = float(input ('input y variable: '))
 pie = 180 / float(math.pi)
-tan = float(math.atan2(x,y))
+tan = math.atan2(y, x)
 c = float(tan) * float(pie)
 #print Result
 print('{0} is the Theta angle of your triangle'.format(c))
