@@ -1,0 +1,6 @@
+jumbo = input('input word here: ')
+def reverse_my_string(word):
+    backsent = word[::-1]
+    print (backsent)
+
+reverse_my_string(jumbo)

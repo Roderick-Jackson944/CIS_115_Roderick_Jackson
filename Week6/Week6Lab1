@@ -1,0 +1,5 @@
+#deffines print messege
+def print_messige ():
+    print ('hello world')
+#recalls function
+print_messige ()

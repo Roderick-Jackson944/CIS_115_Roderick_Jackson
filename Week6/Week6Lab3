@@ -1,0 +1,13 @@
+import math
+#defines var
+x = input ('input x variable: ')
+y = input ('input y variable: ')
+# to power of 2
+a = float(x) ** float(2)
+b = float(y) ** float(2)
+# Pathagorean Theorem
+c = math.sqrt(a+b)
+#print Result
+def printing():
+    print('{0} is the hypotonuse of your triangle'.format(c))
+printing()

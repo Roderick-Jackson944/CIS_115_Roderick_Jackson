@@ -1,0 +1,8 @@
+def print_illiterations():
+    val = input('times looped: ')
+    train = int(val)
+    for num in range(train):
+        print(num)
+    print ('number looped {0} times' .format(val))
+print_illiterations()
+
