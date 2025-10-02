@@ -1,6 +1,6 @@
 
-start = int(-1) + int(input('Input start month (enter number only):'))
-end = int(input('input end month(enter number only):'))
+start = int(-1) + int(input('Input start month (enter number only 1-12):'))
+end = int(input('input end month(enter number only 1-12):'))
 
 def monthsofyear():
     #is list
