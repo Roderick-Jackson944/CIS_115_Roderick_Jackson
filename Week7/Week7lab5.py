@@ -5,3 +5,4 @@ def Kinegy():
     ke = int(.5) * mass * velocity
     print(f'{ke} is the kenedic energy of your item')
 Kinegy()
+#
