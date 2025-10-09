@@ -1,4 +1,5 @@
 list =[]#list
+list.append(input('input initial value:'))
 done = True
 while done:#loop
     list.append(input('Insert any value here to input into list:'))
