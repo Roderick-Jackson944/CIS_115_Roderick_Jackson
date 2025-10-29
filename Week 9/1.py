@@ -1,2 +1,0 @@
-#dictnary
-Student_grades = []

@@ -1,11 +1,12 @@
-def again():
-    list.append(input('Insert any value here to input into list:'))
-    yes = input('Would you like to enter another value to append to the list?(y or n):')
-    if yes == 'n':
-        print(f'{list}')
-    elif yes == 'y':
-        list.append(input('Insert any value here to input into list again:'))
-    else:
-        print(f'error, here is recorded list {list}')
+def count_word_frequency_dict(text):
+    word_counts = {}
+    words = text.lower().split()  # Convert to lowercase and split into words
+    for word in words:
+        # Remove punctuation if desired (example: removing commas and periods)
+        word = word.replace(",", "").replace(".", "")
+        word_counts[word] = word_counts.get(word, 0) + 1
+    return word_counts
 
-again()
+sentence = "The quick brown fox jumps over the lazy dog. The dog is very lazy."
+frequency_map = count_word_frequency_dict(sentence)
+print(frequency_map)
