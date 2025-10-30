@@ -15,4 +15,4 @@ def Assighnpairs(): #assighs Var to dictanary
 Assighnpairs()
 def print_dictanary():
     print(f"{Namesandadresses}")
-print_dictanary()
+print_dictanary()#prints
