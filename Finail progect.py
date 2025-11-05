@@ -31,7 +31,7 @@ print_dictanary()#prints
 #loop for proper CCV
 finding = True
 while finding:
-    creditcardnum = input("enter credit card number:")
+    creditcardnum = input("enter valid credit card number:")
     def validateCreditCard(ccNum):
         digits = [int(d) for d in str(ccNum) if d.isdigit()] #D is  all the numbers
         Sumofitall = 0
@@ -51,5 +51,6 @@ while finding:
             return False
     if validateCreditCard(creditcardnum) == True:
         print('Number is valid')
+        finding = False
     else:
-        print('number is not valid')
+        print('number is not valid, try a diffrent card!')
