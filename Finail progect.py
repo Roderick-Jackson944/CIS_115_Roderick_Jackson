@@ -8,6 +8,11 @@ print('4      |   Ring Camera (wireless)            |   $156.00')
 print('5      |   Smart TV (TCL 70 inch)            |   $359.00')
 print('--------------------------------------------------------------')
 
+catalog = {'usb_k981' : 1,
+           'mbpro_490' : 2,
+           'chip_1010' : 3,
+           'cam_78' : 4,
+           'smt_tv_100' : 5}
 #shipping info lines 12-29
 #dictanary
 Namesandadresses = {
