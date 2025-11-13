@@ -8,11 +8,32 @@ print('4      |   Ring Camera (wireless)            |   $156.00')
 print('5      |   Smart TV (TCL 70 inch)            |   $359.00')
 print('--------------------------------------------------------------')
 
-catalog = {'usb_k981' : 1,
-           'mbpro_490' : 2,
-           'chip_1010' : 3,
-           'cam_78' : 4,
-           'smt_tv_100' : 5}
+catalog = {'usb_k981' : '1',
+           'mbpro_490' : '2',
+           'chip_1010' : '3',
+           'cam_78' : '4',
+           'smt_tv_100' : '5'}
+usb_k981 = 12.00
+mbpro_490 = 2900.00
+chip_1010 = 48.00
+cam_78 = 156.00
+smt_tv_100 = 359.00
+#list of shopping cart
+list =[]#list
+list.append(input('input Item whanted:'))
+done = True
+while done:#loop
+    list.append(input('Insert any item into the cart:'))
+    yes = input('Would you like to enter another item to the cart?(y or n):')
+    if yes == 'n':
+        print(f'{list}')
+        done = False #ends loop
+    elif yes == 'y':
+        list.append(input('Insert any item into the cart:'))
+        yes = input('Would you like to enter another item into the cart?(y or n):')
+    else:
+        done = False #ends loop
+#list of shopping cart
 #shipping info lines 12-29
 #dictanary
 Namesandadresses = {
@@ -59,3 +80,5 @@ while finding:
         finding = False
     else:
         print('number is not valid, try a diffrent card!')
+
+#printing of puchaced itams
