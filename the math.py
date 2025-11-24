@@ -24,3 +24,6 @@ elif produtct_select == 5:
     print('Item; Smart TV (TCL 70 inch), selected: ')
     numberwhanted = int(input('Amount needed: '))
     smorttv.append( 359 * numberwhanted )
+else: 
+    print('Erorr, try again')
+    produtct_select = input('input the item number: ')
