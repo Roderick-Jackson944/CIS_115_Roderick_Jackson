@@ -126,4 +126,5 @@ if ringcam > 0:
 if smorttv > 0:
     amount_TV = int(smorttv) / 359
     print(f'{amount_TV} Amount of Ring cameras purchased')
-
+totalofthestuffs = int(Usb) + int(macbookpro) + int(arduino) + int(ringcam) + int(smorttv)
+print(f'Total amout comes out to {totalofthestuffs}')
