@@ -111,3 +111,19 @@ while finding:
         print('number is not valid, try a diffrent card!')
 
 #printing of puchaced itams
+if Usb > 0:
+    amount_usb = int(Usb) / 12
+    print(f'{amount_usb} Amount of USBs purchased')
+if macbookpro > 0:
+    amount_mackbook = int(macbookpro) / 2900
+    print(f'{amount_mackbook} Amount of Mackbook Pros purchased')
+if arduino > 0:
+    amount_ar = int(arduino) / 48
+    print(f'{amount_ar} Amount of Ardunios purchased')
+if ringcam > 0:
+    amount_ring = int(ringcam) / 156
+    print(f'{amount_ring} Amount of Ring cameras purchased')
+if smorttv > 0:
+    amount_TV = int(smorttv) / 359
+    print(f'{amount_TV} Amount of Ring cameras purchased')
+
