@@ -19,19 +19,48 @@ chip_1010 = 48.00
 cam_78 = 156.00
 smt_tv_100 = 359.00
 #list of shopping cart
+Usb = []
+macbookpro = []
+arduino = []
+ringcam = []
+smorttv = []
+
 list =[]#list
 list.append(input('input Item whanted:'))
 done = True
 while done:#loop
-    list.append(input('Insert any item into the cart:'))
-    yes = input('Would you like to enter another item to the cart?(y or n):')
-    if yes == 'n':
+    produtct_select = input('input the item number: ')
+    if produtct_select == 1:
+        print('Item; Usb Drive (128gb), selected: ')
+        numberwhanted = int(input('Amount needed: '))
+        Usb.append( 12 * numberwhanted )
+    elif produtct_select == 2:
+        print('Item; Mac book Pro (15 in), selected: ')
+        numberwhanted = int(input('Amount needed: '))
+        macbookpro.append( 2900 * numberwhanted )
+    elif produtct_select == 3:
+        print('Item; Arduino 1010 (with blue tooth), selected: ')
+        numberwhanted = int(input('Amount needed: '))
+        arduino.append( 48 * numberwhanted )
+    elif produtct_select == 4:
+        print('Item; Ring Camera (wireless), selected: ')
+        numberwhanted = int(input('Amount needed: '))
+        ringcam.append( 156 * numberwhanted )
+    elif produtct_select == 5:
+        print('Item; Smart TV (TCL 70 inch), selected: ')
+        numberwhanted = int(input('Amount needed: '))
+        smorttv.append( 359 * numberwhanted )
+    else: 
+        print('Erorr, try again')
+        produtct_select = input('input the item number: ')
+        yes = input('Would you like to enter another item to the cart?(y or n):')
+if yes == 'n':
         print(f'{list}')
         done = False #ends loop
-    elif yes == 'y':
+elif yes == 'y':
         list.append(input('Insert any item into the cart:'))
         yes = input('Would you like to enter another item into the cart?(y or n):')
-    else:
+else:
         done = False #ends loop
 #list of shopping cart
 #shipping info lines 12-29
