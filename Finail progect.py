@@ -25,43 +25,80 @@ arduino = []
 ringcam = []
 smorttv = []
 
-list =[]#list
-list.append(input('input Item whanted:'))
 done = True
 while done:#loop
-    produtct_select = input('input the item number: ')
+    produtct_select = int(input('Input the item number: '))
     if produtct_select == 1:
         print('Item; Usb Drive (128gb), selected: ')
         numberwhanted = int(input('Amount needed: '))
         Usb.append( 12 * numberwhanted )
+        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if yes == 'n':
+            print(f'{list}')
+            done = False #ends loop
+        elif yes == 'y':
+            done = True
+        else:
+            done = False #ends loop
+        
     elif produtct_select == 2:
         print('Item; Mac book Pro (15 in), selected: ')
         numberwhanted = int(input('Amount needed: '))
         macbookpro.append( 2900 * numberwhanted )
+        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if yes == 'n':
+            print(f'{list}')
+            done = False #ends loop
+        elif yes == 'y':
+            done = True
+        else:
+            done = False #ends loop
     elif produtct_select == 3:
         print('Item; Arduino 1010 (with blue tooth), selected: ')
         numberwhanted = int(input('Amount needed: '))
         arduino.append( 48 * numberwhanted )
+        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if yes == 'n':
+            print(f'{list}')
+            done = False #ends loop
+        elif yes == 'y':
+            done = True
+        else:
+            done = False #ends loop
     elif produtct_select == 4:
         print('Item; Ring Camera (wireless), selected: ')
         numberwhanted = int(input('Amount needed: '))
         ringcam.append( 156 * numberwhanted )
+        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if yes == 'n':
+            print(f'{list}')
+            done = False #ends loop
+        elif yes == 'y':
+            done = True
+        else:
+            done = False #ends loop
     elif produtct_select == 5:
         print('Item; Smart TV (TCL 70 inch), selected: ')
         numberwhanted = int(input('Amount needed: '))
         smorttv.append( 359 * numberwhanted )
+        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if yes == 'n':
+            print(f'{list}')
+            done = False #ends loop
+        elif yes == 'y':
+            done = True
+        else:
+            done = False #ends loop
     else: 
         print('Erorr, try again')
         produtct_select = input('input the item number: ')
-        yes = input('Would you like to enter another item to the cart?(y or n):')
-if yes == 'n':
-        print(f'{list}')
-        done = False #ends loop
-elif yes == 'y':
-        list.append(input('Insert any item into the cart:'))
-        yes = input('Would you like to enter another item into the cart?(y or n):')
-else:
-        done = False #ends loop
+        if yes == 'n':
+            print('To checkout')
+            done = False #ends loop
+        elif yes == 'y':
+            done = True
+        else:
+            done = False #ends loop
 #list of shopping cart
 #shipping info lines 12-29
 #dictanary
@@ -111,19 +148,19 @@ while finding:
         print('number is not valid, try a diffrent card!')
 
 #printing of puchaced itams
-if Usb > 0:
+if int(Usb) > 0:
     amount_usb = int(Usb) / 12
     print(f'{amount_usb} Amount of USBs purchased')
-if macbookpro > 0:
+if int(macbookpro) > 0:
     amount_mackbook = int(macbookpro) / 2900
     print(f'{amount_mackbook} Amount of Mackbook Pros purchased')
-if arduino > 0:
+if int(arduino) > 0:
     amount_ar = int(arduino) / 48
     print(f'{amount_ar} Amount of Ardunios purchased')
-if ringcam > 0:
+if int(ringcam) > 0:
     amount_ring = int(ringcam) / 156
     print(f'{amount_ring} Amount of Ring cameras purchased')
-if smorttv > 0:
+if int(smorttv) > 0:
     amount_TV = int(smorttv) / 359
     print(f'{amount_TV} Amount of Ring cameras purchased')
 totalofthestuffs = int(Usb) + int(macbookpro) + int(arduino) + int(ringcam) + int(smorttv)
