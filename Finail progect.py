@@ -19,11 +19,11 @@ chip_1010 = 48.00
 cam_78 = 156.00
 smt_tv_100 = 359.00
 #list of shopping cart
-Usb = []
-macbookpro = []
-arduino = []
-ringcam = []
-smorttv = []
+Usb = 0
+macbookpro = 0
+arduino = 0
+ringcam = 0
+smorttv = 0
 
 done = True
 while done:#loop
@@ -31,7 +31,7 @@ while done:#loop
     if produtct_select == 1:
         print('Item; Usb Drive (128gb), selected: ')
         numberwhanted = int(input('Amount needed: '))
-        Usb.append( 12 * numberwhanted )
+        Usb += ( 12 * numberwhanted )
         yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
@@ -44,7 +44,7 @@ while done:#loop
     elif produtct_select == 2:
         print('Item; Mac book Pro (15 in), selected: ')
         numberwhanted = int(input('Amount needed: '))
-        macbookpro.append( 2900 * numberwhanted )
+        macbookpro += ( 2900 * numberwhanted )
         yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
@@ -56,7 +56,7 @@ while done:#loop
     elif produtct_select == 3:
         print('Item; Arduino 1010 (with blue tooth), selected: ')
         numberwhanted = int(input('Amount needed: '))
-        arduino.append( 48 * numberwhanted )
+        arduino += ( 48 * numberwhanted )
         yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
@@ -68,7 +68,7 @@ while done:#loop
     elif produtct_select == 4:
         print('Item; Ring Camera (wireless), selected: ')
         numberwhanted = int(input('Amount needed: '))
-        ringcam.append( 156 * numberwhanted )
+        ringcam  += ( 156 * numberwhanted )
         yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
@@ -80,7 +80,7 @@ while done:#loop
     elif produtct_select == 5:
         print('Item; Smart TV (TCL 70 inch), selected: ')
         numberwhanted = int(input('Amount needed: '))
-        smorttv.append( 359 * numberwhanted )
+        smorttv += ( 359 * numberwhanted )
         yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
