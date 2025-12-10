@@ -32,7 +32,12 @@ while done:#loop
         print('Item; Usb Drive (128gb), selected: ')
         numberwhanted = int(input('Amount needed: '))
         Usb += ( 12 * numberwhanted )
-        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if Usb > 12000:
+            Usb -= (12 *numberwhanted)
+            print('more than on hand')
+            yes = input('Would you like to enter another item into the cart?(y or n):')
+        else:
+            yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
             done = False #ends loop
@@ -45,7 +50,12 @@ while done:#loop
         print('Item; Mac book Pro (15 in), selected: ')
         numberwhanted = int(input('Amount needed: '))
         macbookpro += ( 2900 * numberwhanted )
-        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if macbookpro > 130500:
+            macbookpro -= (2900 *numberwhanted)
+            print('more than on hand')
+            yes = input('Would you like to enter another item into the cart?(y or n):')
+        else:
+            yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
             done = False #ends loop
@@ -57,7 +67,12 @@ while done:#loop
         print('Item; Arduino 1010 (with blue tooth), selected: ')
         numberwhanted = int(input('Amount needed: '))
         arduino += ( 48 * numberwhanted )
-        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if arduino > 15600:
+            arduino -= (48 *numberwhanted)
+            print('more than on hand')
+            yes = input('Would you like to enter another item into the cart?(y or n):')
+        else:
+            yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
             done = False #ends loop
@@ -69,7 +84,12 @@ while done:#loop
         print('Item; Ring Camera (wireless), selected: ')
         numberwhanted = int(input('Amount needed: '))
         ringcam  += ( 156 * numberwhanted )
-        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if ringcam > 15288:
+            ringcam -= (156 *numberwhanted)
+            print('more than on hand')
+            yes = input('Would you like to enter another item into the cart?(y or n):')
+        else:
+            yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
             done = False #ends loop
@@ -81,7 +101,12 @@ while done:#loop
         print('Item; Smart TV (TCL 70 inch), selected: ')
         numberwhanted = int(input('Amount needed: '))
         smorttv += ( 359 * numberwhanted )
-        yes = input('Would you like to enter another item into the cart?(y or n):')
+        if smorttv > 80775:
+            smorttv -= (359 *numberwhanted)
+            print('more than on hand')
+            yes = input('Would you like to enter another item into the cart?(y or n):')
+        else:
+            yes = input('Would you like to enter another item into the cart?(y or n):')
         if yes == 'n':
             print(f'{list}')
             done = False #ends loop
@@ -117,9 +142,7 @@ def Assighnpairs(): #assighs Var to dictanary
     Namesandadresses['email'] = input("E-Mail Adresses:")
     Namesandadresses['phoneNumber'] = input('Phone Number:')
 Assighnpairs()
-def print_dictanary():
-    print(f"{Namesandadresses}")
-print_dictanary()#prints
+#prints
 #loop for proper CCV
 finding = True
 while finding:
@@ -149,22 +172,29 @@ while finding:
 
 #printing of puchaced itams
 print('Billing/Shipping Information:')
-print()
+def print_dictanary():
+    print(f"{Namesandadresses}")
+print_dictanary()
 print('Shopping Cart Information:')
 if int(Usb) > 0:
     amount_usb = int(Usb) / 12
     print(f'{amount_usb} Amount of USBs purchased')
+    print(f'{Usb}')
 if int(macbookpro) > 0:
     amount_mackbook = int(macbookpro) / 2900
     print(f'{amount_mackbook} Amount of Mackbook Pros purchased')
+    print(f'{macbookpro}')
 if int(arduino) > 0:
     amount_ar = int(arduino) / 48
     print(f'{amount_ar} Amount of Ardunios purchased')
+    print(f'{arduino}')
 if int(ringcam) > 0:
     amount_ring = int(ringcam) / 156
     print(f'{amount_ring} Amount of Ring cameras purchased')
+    print(f'{ringcam}')
 if int(smorttv) > 0:
     amount_TV = int(smorttv) / 359
-    print(f'{amount_TV} Amount of Ring cameras purchased')
+    print(f'{amount_TV} Amount of Smart TVs purchased')
+    print(f'{smorttv}')
 totalofthestuffs = int(Usb) + int(macbookpro) + int(arduino) + int(ringcam) + int(smorttv)
 print(f'Total amout comes out to {totalofthestuffs}')
