@@ -148,6 +148,9 @@ while finding:
         print('number is not valid, try a diffrent card!')
 
 #printing of puchaced itams
+print('Billing/Shipping Information:')
+print()
+print('Shopping Cart Information:')
 if int(Usb) > 0:
     amount_usb = int(Usb) / 12
     print(f'{amount_usb} Amount of USBs purchased')
